@@ -10,9 +10,9 @@
 # 1 3 * * * /var/www/s3.sh
 
 # <S3.Config>
-s3Key=AKIAUPAU2HHA7DBM6JNH
-s3Secret=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
-bucket=idsf-backup
+s3Key="KEY"
+s3Secret="SECRET"
+bucket="BUCKET"
 # </S3.Config>
 
 backFile=backup_$(date +%d-%m-%Y_%H-%M).zip #format: DD/MM/YYYY HH:MM
@@ -57,4 +57,4 @@ EOF
 
 echo *RESULT* https://${bucket}.s3.amazonaws.com/${backFile}
 echo $(date -R)
-echo 
+echo
